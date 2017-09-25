@@ -7,9 +7,9 @@ import { ToastController, ToastOptions, NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  toastOptions: ToastOptions
-  constructor(public toast: ToastController, public navCtrl: NavController) {
-    this.toastOptions = {
+  msgOptions: ToastOptions
+  constructor(public msg: ToastController, public navCtrl: NavController) {
+    this.msgOptions = {
       message: 'Porta aberta',
       duration: 3000,
       position: 'bottom'
@@ -18,7 +18,7 @@ export class HomePage {
   
   abrePorta(){
     console.log('Porta Aberta');	
-    this.toast.create(this.toastOptions).present();
+    this.msg.create(this.msgOptions).present();
   }
 
 }
