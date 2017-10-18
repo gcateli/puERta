@@ -42002,9 +42002,9 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* Version *
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__components_modal_modal_component__ = __webpack_require__(74);
 /* unused harmony reexport ModalCmp */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__components_modal_modal_controller__ = __webpack_require__(148);
-/* unused harmony reexport ModalController */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_53__components_modal_modal_controller__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_nav_nav__ = __webpack_require__(73);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_54__components_nav_nav__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_54__components_nav_nav__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_nav_nav_pop__ = __webpack_require__(76);
 /* unused harmony reexport NavPop */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__components_nav_nav_pop_anchor__ = __webpack_require__(149);
@@ -42083,7 +42083,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* Version *
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_92__components_toast_toast_component__ = __webpack_require__(93);
 /* unused harmony reexport ToastCmp */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_93__components_toast_toast_controller__ = __webpack_require__(171);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_93__components_toast_toast_controller__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_93__components_toast_toast_controller__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_94__components_toggle_toggle__ = __webpack_require__(172);
 /* unused harmony reexport Toggle */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_95__components_toolbar_toolbar_footer__ = __webpack_require__(173);
@@ -42117,20 +42117,20 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* Version *
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_108__platform_dom_controller__ = __webpack_require__(8);
 /* unused harmony reexport DomController */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_109__platform_platform__ = __webpack_require__(3);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_109__platform_platform__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_109__platform_platform__["a"]; });
 /* unused harmony reexport setupPlatform */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_110__tap_click_haptic__ = __webpack_require__(35);
 /* unused harmony reexport Haptic */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_111__navigation_deep_linker__ = __webpack_require__(14);
 /* unused harmony reexport DeepLinker */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_112__navigation_ionic_page__ = __webpack_require__(246);
-/* unused harmony reexport IonicPage */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_112__navigation_ionic_page__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_113__navigation_nav_controller__ = __webpack_require__(21);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_113__navigation_nav_controller__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_113__navigation_nav_controller__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_114__navigation_nav_controller_base__ = __webpack_require__(41);
 /* unused harmony reexport NavControllerBase */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_115__navigation_nav_params__ = __webpack_require__(13);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_115__navigation_nav_params__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_115__navigation_nav_params__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_116__navigation_nav_util__ = __webpack_require__(20);
 /* unused harmony reexport DeepLinkMetadata */
 /* unused harmony reexport DeepLinkMetadataFactory */
@@ -42190,7 +42190,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* Version *
 /* unused harmony reexport IonicGestureConfig */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_136__module__ = __webpack_require__(251);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_136__module__["a"]; });
-/* unused harmony reexport IonicPageModule */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_136__module__["b"]; });
 /* unused harmony reexport provideLocationStrategy */
 
 
@@ -108265,7 +108265,7 @@ var /** @type {?} */ REQUIRED_DOM_READS = 2;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export IonicPage */
+/* harmony export (immutable) */ __webpack_exports__["a"] = IonicPage;
 /**
  * \@name IonicPage
  * \@description
@@ -111081,7 +111081,7 @@ var IonicErrorHandler = (function (_super) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IonicModule; });
-/* unused harmony export IonicPageModule */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return IonicPageModule; });
 /* unused harmony export provideLocationStrategy */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(38);

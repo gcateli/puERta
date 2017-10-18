@@ -11,10 +11,13 @@
 	<div text-center>
 	<p>Clique no cadeado para desbloquear a porta</p>
 
-      	<div padding-vertical>
-		 <button ion-button icon-only (click)='abrePorta();'>
+    <div padding-vertical>
+		 	<button ion-button icon-only (click)='abrePorta();'>
   		    <ion-icon name="lock"></ion-icon>
-	  	 </button>
+			 </button>
+		 	<button ion-button icon-only [navPush]="imeiPage">
+				<ion-icon name="cog"></ion-icon>
+		 </button>		 
 		</div>
 	</div>
 </ion-content>

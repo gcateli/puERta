@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
-import { ToastController, ToastOptions, NavController } from 'ionic-angular';
+import { ToastController, ToastOptions, NavController, ModalController } from 'ionic-angular';
+import {ImeiPage} from '../imei/imei';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  imeiPage = ImeiPage;
   msgOptions: ToastOptions
-  constructor(public msg: ToastController, public navCtrl: NavController) {
+  
+  constructor(private msg: ToastController, private navCtrl: NavController, private modal: ModalController) {
     this.msgOptions = {
       message: 'Porta aberta',
       duration: 3000,
@@ -17,8 +19,13 @@ export class HomePage {
   }
   
   abrePorta(){
-    console.log('Porta Aberta');	
+    console.log('Porta Aberta');
     this.msg.create(this.msgOptions).present();
   }
 
+  mostraIMEI(){
+    const paginaModal = this.modal.create('ImeiPage');
+    paginaModal.present();
+  }
+  
 }
