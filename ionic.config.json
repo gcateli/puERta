@@ -1,6 +1,6 @@
 {
   "name": "puerta",
-  "app_id": "",
+  "app_id": "c05f584e",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

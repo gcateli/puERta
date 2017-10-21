@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ToastController, ToastOptions, IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the ImeiPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+declare var cordova: any;
 
 @IonicPage()
 @Component({
@@ -16,8 +11,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class ImeiPage {
 
   imei: string = '';
+  msgOptions: ToastOptions
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private msg: ToastController,public navCtrl: NavController, public navParams: NavParams) {
+    this.msgOptions = {
+      message: '',
+      duration: 3000,
+      position: 'bottom'
+    }     
   }
 
   ionViewDidLoad() {
@@ -25,6 +26,24 @@ export class ImeiPage {
   }
 
   obterIMEI(){
-    this.imei = '12357-5689'
-  }
+    var permissions = cordova.plugins.permissions;
+    var imei = cordova.plugins.imei;
+    permissions.requestPermission(permissions.READ_PHONE_STATE, success, error);
+    function error() {
+      this.msgOptions.message = 'Não há permissões para acessar o IMEI!';
+      this.msg.create(this.msgOptions).present();      
+    }
+    function success(status) {
+        imei.get(
+            function (imei) {
+              console.log('worked');
+              this.imei = imei;
+            },
+            function () {
+              console.log('error');
+              this.msgOptions.message = 'Erro ao acessar o IMEI!';
+              this.msg.create(this.msgOptions).present();                            
+            }
+        );
+    }  }
 }
