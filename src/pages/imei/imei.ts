@@ -45,5 +45,6 @@ export class ImeiPage {
               this.msg.create(this.msgOptions).present();                            
             }
         );
-    }  }
+    }  
+  }
 }

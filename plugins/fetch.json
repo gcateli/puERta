@@ -70,5 +70,25 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-ionic": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-ionic@^2.0.1"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_ID": "7dfaf50a",
+      "CHANNEL_NAME": "Master",
+      "UPDATE_METHOD": "background"
+    }
+  },
+  "cordova-plugin-add-swift-support": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-add-swift-support@^1.6.1"
+    },
+    "is_top_level": false,
+    "variables": {}
   }
 }

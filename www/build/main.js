@@ -210,7 +210,7 @@ var MyApp = (function () {
         // used for an example of ngFor and navigation
         this.pages = [
             { title: 'Home', component: __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */] },
-            { title: 'List', component: __WEBPACK_IMPORTED_MODULE_5__pages_imei_imei__["a" /* ImeiPage */] }
+            { title: 'Configurações', component: __WEBPACK_IMPORTED_MODULE_5__pages_imei_imei__["a" /* ImeiPage */] }
         ];
     }
     MyApp.prototype.initializeApp = function () {
@@ -302,10 +302,9 @@ ImeiPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-imei',template:/*ion-inline-start:"/Users/guilhermecateli/Documents/gitHub/puerta/src/pages/imei/imei.html"*/'<ion-header>\n  <ion-navbar>\n      <ion-title>Configurações</ion-title>      \n    <button ion-button icon-only menuToggle>\n        <ion-icon name="arrow-dropleft"></ion-icon>\n    </button>  \n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <div padding-vertical>\n    <ion-list>        \n      <ion-item>\n          <ion-label floating>IMEI</ion-label>        \n          <ion-input type="text" [(ngModel)]="imei"></ion-input>\n      </ion-item>\n    </ion-list>   \n    <button ion-button full (click)=\'obterIMEI();\'>Obter IMEI</button>    \n  </div>    \n</ion-content>\n'/*ion-inline-end:"/Users/guilhermecateli/Documents/gitHub/puerta/src/pages/imei/imei.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
 ], ImeiPage);
 
-var _a, _b, _c;
 //# sourceMappingURL=imei.js.map
 
 /***/ })
